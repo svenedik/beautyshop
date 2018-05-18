@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+	'apc_enabled' => true,
+    'apc_prefix' => 'laravel:',
 	'routes' => [
 		// 'login' => ['middleware' => ['web']],
 		// 'jqadm' => ['prefix' => 'admin/{site}/jqadm', 'middleware' => ['web', 'auth']],
