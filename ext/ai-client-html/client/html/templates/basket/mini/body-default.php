@@ -116,7 +116,13 @@ $priceFormat = $this->translate( 'client', '%1$s %2$s' );
 
 		<h1><?= $enc->html( $this->translate( 'client', 'Basket' ), $enc::TRUST ); ?></h1>
 
-		<a href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, [], [], $basketConfig ) ); ?>">
+		<a href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, [], [], $basketConfig ) ); ?>" class="basket-btn">
+			My Basket <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+			<span id="many_product" class="many_product">
+			<?php echo $enc->html( $quantity ); ?>
+			</span>
+			<!-- KALDIRILDI -->
+			<!--
 			<div class="basket-mini-main">
 				<span class="quantity">
 					<?= $enc->html( $quantity ); ?>
@@ -125,6 +131,7 @@ $priceFormat = $this->translate( 'client', '%1$s %2$s' );
 					<?= $enc->html( sprintf( $priceFormat, $this->number( $priceItem->getValue() + $priceItem->getCosts() ), $priceCurrency ) ); ?>
 				</span>
 			</div>
+			-->
 		</a>
 
 		<div class="basket-mini-product">
