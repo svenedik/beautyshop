@@ -15,8 +15,8 @@
             <div class="navbar-right">
                 @if (empty(Auth::user()))
                 <div class="account-btn-group">
-                    <a href="/register" class="account-btn">Sign In</a>
-                    <a href="/login" class="account-btn">Register</a>                    
+                    <a href="/register" class="account-btn">Register</a>
+                    <a href="/login" class="account-btn">Sign In</a>                    
                 </div>
                 @else
                 <div class="account-btn-group">
@@ -39,7 +39,9 @@
             <div class="background-line"></div>
             <div class="container">
                 <ul class="nav navbar-nav">
-                    <li><a href="/">Pirate Squad Rocks</a></li>
+                    <li><a href="http://shoppbagg.com/" target="_blank">ShoppBagg</a></li>
+                    <li><a href="http://inshoppingcart.com/"  target="_blank">InshoppingCart</a></li>
+                    <li><a href="http://www.zubigo.com/"  target="_blank">Zubigo</a></li>
                     <li><a href="/">Contact</a></li>
                 </ul>
             </div>
