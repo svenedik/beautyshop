@@ -16,9 +16,11 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
         @yield('aimeos_header')
+        <!-- Fonts -->
         <!--@ yield('aimeos_styles')-->
         <!-- Styles -->
         <link href="{{mix('css/app.css')}}" rel="stylesheet">
+        <script async src="{{url('//piratesquad.api.sociaplus.com/partner.js')}}"></script>
     </head>
     <body>
         @include('partials.header')
