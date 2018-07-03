@@ -21,6 +21,9 @@
         <!-- Styles -->
         <link href="{{mix('css/app.css')}}" rel="stylesheet">
         <script async src="{{url('//piratesquad.api.sociaplus.com/partner.js')}}"></script>
+        
+        <!-- ChatWhale -->
+        <script src="{{url('//chatwhale.io/widgets/v1/39.js')}}" async="async"> </script>
     </head>
     <body>
         @include('partials.header')
